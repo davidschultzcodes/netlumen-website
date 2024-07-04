@@ -3,35 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Netlumen</title>
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
     <link rel="stylesheet" href="style1.css">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body>
-    <div class="title">
-        <h1>Welcome to Netlumen!</h1>
-    </div>
+    
+    <nav>
+        <div class="nav-logo">
+            <a href="#">
+                <img src="images/logo.png" alt="logo">
+            </a>
+        </div>
 
-    <div class="description">
-        <h1>Our website is still under contstruction. Please check back later.</h1>
-    </div>
+        <ul class="nav-links">
+            <li class="link"><a href="#">Home</a></li>
+            <li id="link1" class="link"><a href="#">Features</a></li>
+            <li id="link2" class="link"><a href="#">Pricing</a></li>
+            <li id="link3" class="link"><a href="#">About</a></li>
+        </ul>
+        <button class="btn" onclick="sendEmail()">Contact Us</button>
+    </nav>
 
-    <div class="loading">
-        <div class="loader"></div>
-            <div class="fade-in-out">
-                <p id="fadeText"></p>
+    <header class="container">
+        <div class="content">
+            <h4>SOFTWARE MADE EASY</h4>
+            <h1>Need a website? Let <span>Netlumen</span> handle it.</h1>
+            <p>
+                Netlumen specializes in crafting website solutions 
+                tailored to your unique needs. We combine innovative technology 
+                with creative design to build responsive, user-friendly websites 
+                that are cost effective and deliver exceptional digital experiences.
+            </p>
+            <button id="explorefeatures" class="btn">Explore our Features!</button>
+        </div>
+        <div class="image">
+            <img src="images/image3.png" alt="image1">
+        </div>
+    </header>
+
+    <section class="container">
+        <h2 class="header">FEATURES</h2>
+        <div class="features">
+            <div class="card">
+                <span class="material-symbols-outlined">touch_app</span>
+                <h4>Responsive Design</h4>
+                <p>
+                    Ensuring the website works on all devices, including desktops, tablets, and smartphones.
+                </p>
+                <a href="#" onclick="alert('Do you also hate when a website does not work on your mobile device? Us too. We make sure that does not happen.')">Learn More </a>
             </div>
+            <div class="card">
+                <span class="material-symbols-outlined">lock</span>
+                <h4>Security</h4>
+                <p>
+                    Regular updates and secure coding practices to protect user data. HTML/CSS Validator certification.
+                </p>
+                <a href="#" onclick="alert('Validation is a great way to check whether a page is built in accordance with Web standards, and provides one of the most reliable guarantees that future Web platforms will handle it as designed.')">Learn More </a>
+            </div>
+            <div class="card">
+                <span class="material-symbols-outlined">person</span>
+                <h4>Personalization</h4>
+                <p>
+                    Work 1 on 1 with a software developer to design what you like! You're not just a number here.
+                </p>
+                <a href="#" onclick="alert('Personalization not only increases engagement and satisfaction, but also builds a connection, ultimately leading to long-term customer loyalty.')">Learn More </a>
+            </div>
+            <div class="card">
+                <span class="material-symbols-outlined">sell</span>
+                <h4>Cost Effectiveness</h4>
+                <p>
+                    Netlumen is happy to prove its cost effectiveness in a world of fierce competition. Ask us about anything!
+                </p>
+                <a href="#" onclick="alert('Cost effectiveness is crucial when creating a website as it ensures efficient use of resources, maximizes return on investment, and enables you to achieve your goals without unnecessary expenditure.')">Learn More </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="header">PROJECT PRICING PLANS</h2>
+        <p class="sub-header">
+            Let us take care of the website - we'll make it shine!
+        </p>
+        <div class="pricing">
+            <div class="card">
+                <div class="content">
+                    <h4>Build It Plan</h4>
+                    <h3>~ $500/yr</h3>
+                    <p>
+                        <i class="ri-skip-right-fill"></i>
+                        Up to 3 pages
+                    </p>
+                    <p>
+                        <i class="ri-skip-right-fill"></i>
+                        Simple and infrequent content updates
+                    </p>
+                </div>
+                <button class="btn" onclick="sendEmail()">Tell us About Yourself!</button>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h4>No Fuss Plan</h4>
+                    <h3>~ $750/yr</h3>
+                    <p>
+                        <i class="ri-skip-right-fill"></i>
+                        Up to 10 pages 
+                    </p>
+                    <p>
+                        <i class="ri-skip-right-fill"></i>
+                        Domain and hosting setup
+                    </p>
+                    <p>
+                        <i class="ri-skip-right-fill"></i>
+                        More frequent content updates
+                    </p>
+                </div>
+                <button class="btn" onclick="sendEmail()">Learn More About This!</button>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h4>Comprehensive Care Plan</h4>
+                    <h3>~ $1000/yr </h3>
+                    <p>
+                        <i class="ri-skip-right-fill"></i>
+                        Domain and hosting setup
+                    </p>
+                    <p>
+                        <i class="ri-skip-right-fill"></i>
+                        Email domain and hosting setup
+                    </p>
+                    <p>
+                        <i class="ri-skip-right-fill"></i>
+                        Complex website content
+                    </p>
+                    <p>
+                        <i class="ri-skip-right-fill"></i>
+                        Database functionality
+                    </p>
+                </div>
+                <button class="btn" onclick="sendEmail()">Let's Chat!</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container">
+        <div class="column">
+            <div class="logo">
+                <img src="images\logo.png" alt="logo">
+            </div>
+            <p>
+                Netlumen Software LLC.  
+            </p>
+        </div>
+        <div class="column">
+            <h4>About Us</h4>
+            <p>
+                Netlumen Software LLC was created to help people make a website and put it online.
+                Our commitment to the core values of trust, honesty, and communication allow us
+                to deliver our quality software at a very competitive price. Netlumen strives to create 
+                worldwide software with small town hospitality. 
+            </p>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        Copyright © 2024 Netlumen Software LLC. All Rights Reserved.
     </div>
+
 
     <script src="script.js"></script>
 
-    <div class="footer">
-        <p>2024 NETLUMEN SOFTWARE LLC</p>
-    </div>
-    
-</body>
-
+    </body>
 </html>

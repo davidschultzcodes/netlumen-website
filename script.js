@@ -1,24 +1,36 @@
-const fadeText = document.getElementById('fadeText');
-const messages = 
-[
-"Typing 1s and 0s...", 
-"Moving the satellite into position...",
-"Clicking the Save button...", 
-"Convincing the AI not to turn evil...",
-"Killing bugs...",
-"It's not you it's me",
-"Adjusting the flux capacitor...",
-"(Insert Quarter)",
-"Counting backwards from infinity...",
-"Spinning the wheel of fortune..."
-];
-let currentIndex = 0;
-
-function updateText() {
-    fadeText.textContent = messages[currentIndex];
-    currentIndex = (currentIndex + 1) % messages.length;
+function scrollToElement(elementSelector, instance =0){
+    //select all elements that match the given selector
+    const elements = document.querySelectorAll(elementSelector);
+    //check if there are elements matching the selector and if the requested instance exists
+    if (elements.length > instance){
+        //scroll to specified instance of the element
+        elements[instance].scrollIntoView({ behavior: 'smooth' });
+    }
 }
 
-updateText(); // Initial update
+const link1 = document.getElementById("link1");
+const link2 = document.getElementById("link2");
+const link3 = document.getElementById("link3");
+const explorefeatures = document.getElementById("explorefeatures");
 
-setInterval(updateText, 8000); // Switch text every x seconds
+link1.addEventListener('click', () =>{
+    scrollToElement('.header');
+});
+
+link2.addEventListener('click', () =>{
+    //scroll to second element with "header" class
+    scrollToElement('.header', 1);
+});
+
+link3.addEventListener('click', () =>{
+    scrollToElement('.column');
+});
+
+explorefeatures.addEventListener('click', () =>{
+    scrollToElement('.header');
+});
+
+function sendEmail() {
+    var email = 'mailto:contact@netlumen.net';
+    window.location.href = email;
+}
